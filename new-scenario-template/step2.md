@@ -48,17 +48,21 @@ You shoud see something like:
 NAME               TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)    AGE
 postgres-service   ClusterIP   10.106.77.188   <none>        5432/TCP   7m25s
 ```
-
+  
 We can expose this service, to the outside world by using port forwarding:
 
 ```bash
 kubectl port-forward service/postgres-service 5435:5432
 ```{{execute}}
 
-**Now startup dbeaver and connect to databse on localhost:5435**
-
-Once all is working as expected kill port-forwarding by pressing ^C inside the terminal.
+**Now startup pgadmin in new terminal and connect to database on localhost:5435**
   
 ```bash 
-docker run -d --network mybridge -p 5050:5050 -e PGADMIN_SETUP_EMAIL=admin -e PGADMIN_SETUP_PASSWORD=password —name=pgadmin crunchydata/crunchy-pgadmin4:centos7-12.2-4.3.0
+docker pull dpage/pgadmin4
+docker run -p 80:80 \
+    -e 'PGADMIN_DEFAULT_EMAIL=admin@domain.com' \
+    -e 'PGADMIN_DEFAULT_PASSWORD=admin' \
+    -d dpage/pgadmin4
 ```{{execute}}
+
+Once all is working as expected kill port-forwarding by pressing ^C inside the terminal.
