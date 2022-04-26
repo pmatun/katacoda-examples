@@ -33,7 +33,7 @@ kubectl apply -f postgres/postgres-deployment.yml
 We need to expose database to others as service, so execue the following command:
 
 ```bash
-kubectl apply -f postgres/postgres-service.yaml
+kubectl apply -f postgres/postgres-service.yml
 ```{{execute}}
 
 To chek if all is working well, execute:
