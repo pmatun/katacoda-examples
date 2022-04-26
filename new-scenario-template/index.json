@@ -6,7 +6,7 @@
   "details": {
     "assets": {
       "client": [
-	{ "file": "./postgres/*", "target": "~/" }
+	{ "file": "*", "target": "~/" }
       ]
     },
     "steps": [
