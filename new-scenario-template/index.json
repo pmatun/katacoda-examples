@@ -6,7 +6,7 @@
   "details": {
     "assets": {
       "client": [
-	{ "file": ".postgres/*", "target": "~/" }
+	{ "file": "./postgres/*", "target": "~/" }
       ]
     },
     "steps": [
@@ -31,7 +31,7 @@
     }
   },
   "environment": {
-    "uilayout": "vscode-terminal-split"
+    "uilayout": "editor-terminal"
   },
   "backend": {
     "imageid": "minikube"
