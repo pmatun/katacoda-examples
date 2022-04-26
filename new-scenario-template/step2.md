@@ -58,3 +58,7 @@ kubectl port-forward service/postgres-service 5435:5432
 **Now startup dbeaver and connect to databse on localhost:5435**
 
 Once all is working as expected kill port-forwarding by pressing ^C inside the terminal.
+  
+```bash 
+docker run -d --network mybridge -p 5050:5050 -e PGADMIN_SETUP_EMAIL=admin -e PGADMIN_SETUP_PASSWORD=password —name=pgadmin crunchydata/crunchy-pgadmin4:centos7-12.2-4.3.0
+```{{execute}}
