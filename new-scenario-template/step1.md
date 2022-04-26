@@ -1,8 +1,10 @@
-# Heading for Step 1
+# Step 1 - Start Minikube
+Minikube has been installed and configured in the environment. Check that it is properly installed, by running the minikube version command:
 
-This is some text.
+`minikube version`{{execute}}
 
-Here's a single line of runnable code:
+Start the cluster, by running the minikube start command:
 
-`printf 'Hello, world!\n\n'`{{execute}}
+`minikube start --wait=false`{{execute}}
 
+Great! You now have a running Kubernetes cluster in your online terminal. Minikube started a virtual machine for you, and a Kubernetes cluster is now running in that VM.
