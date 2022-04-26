@@ -1,0 +1,21 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: geodata-ingress
+  namespace: geodata
+  labels:
+    app: ingress
+spec:
+  rules:
+    - host: geodata.local-minikube.io
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: geodata-web-service
+                port:
+                  number: 80
+                  # use the line bellow for geodata-app
+                  #number: 8080

@@ -1,0 +1,10 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: geodata-service-svc
+  namespace: default
+spec:
+  type: ExternalName
+  externalName: geodata-web-service.geodata.svc.cluster.local
+  ports:
+  - port: 80
