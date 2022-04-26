@@ -5,10 +5,10 @@
   "time": "2 hours",
   "details": {
     "assets": {
-			"client": [
-				{ "file": "*", "target": "~/" }
-			]
-		},
+      "client": [
+	{ "file": "*", "target": "~/" }
+      ]
+    },
     "steps": [
       {
         "title": "Step 1",
