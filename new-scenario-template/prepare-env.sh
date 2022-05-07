@@ -11,28 +11,7 @@ if [[ ! -d "$PGADMIN_SETUP_EMAIL" ]]; then
 fi
 
 sudo apt update
-#sudo apt-get install ca-certificates -y
-# Ensure dependencies
-sudo apt -y install make tar xz-utils wget
-
-# Make a place to build it in
-mkdir -p ~/src
-cd ~/src
-wget https://launchpad.net/ubuntu/+archive/primary/+sourcefiles/ca-certificates/20210119~20.04.2/ca-certificates_20210119~20.04.2.tar.xz    
-tar -xJf ca-certificates_20210119~20.04.2.tar.xz
-
-# Now build and install
-cd ca-certificates-20210119~20.04.1
-make
-sudo make install
-
-# You might want to run this interactively to ensure
-# you can select the ISRG Root X1
-# in which case, just run: sudo dpkg-reconfigure ca-certificates
-sudo dpkg-reconfigure -fnoninteractive ca-certificates
-sudo update-ca-certificates
-/usr/bin/c_rehash /etc/ssl/certs
-
+sudo apt-get install ca-certificates -y </dev/null
 
 #
 # Setup the repository
