@@ -11,7 +11,7 @@ if [[ ! -d "$PGADMIN_SETUP_EMAIL" ]]; then
     echo 'export PGADMIN_SETUP_PASSWORD="${pg_admin_pwd}"' >> ~/.bashrc
 fi
 
-sudo apt update
+sudo apt update & sudo apt install -y ca-certificates
 
 
 #
@@ -22,7 +22,7 @@ sudo apt update
 sudo curl https://www.pgadmin.org/static/packages_pgadmin_org.pub | sudo apt-key add
 
 # Create the repository configuration file:
-sudo apt install -y ca-certificates & sudo sh -c 'echo "deb https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/$(lsb_release -cs) pgadmin4 main" > /etc/apt/sources.list.d/pgadmin4.list && apt update'
+ sudo sh -c 'echo "deb https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/$(lsb_release -cs) pgadmin4 main" > /etc/apt/sources.list.d/pgadmin4.list && apt update'
 
 #
 # Install pgAdmin
