@@ -11,8 +11,8 @@ if [[ ! -d "$PGADMIN_SETUP_EMAIL" ]]; then
     echo 'export PGADMIN_SETUP_PASSWORD="${pg_admin_pwd}"' >> ~/.bashrc
 fi
 
-sudo apt install ca-certificates
 sudo apt update
+sudo apt install ca-certificates
 
 #
 # Setup the repository
