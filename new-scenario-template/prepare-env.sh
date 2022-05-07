@@ -2,7 +2,6 @@
 
 echo 'please wait while we prep the environment (should take about 10 seconds)'
 
-launch.sh
 
 if [[ ! -d "$PGADMIN_SETUP_EMAIL" ]]; then 
     export PGADMIN_SETUP_EMAIL="admin@domain.com"
@@ -40,3 +39,5 @@ sudo apt install pgadmin4
 
 # Configure the webserver, if you installed pgadmin4-web:
 sudo /usr/pgadmin4/bin/setup-web.sh --yes
+
+launch.sh
