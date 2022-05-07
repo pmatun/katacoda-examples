@@ -1,5 +1,7 @@
 #/bin/bash
 
+launch.sh
+
 if [[ ! -d "$PGADMIN_SETUP_EMAIL" ]]; then 
     export PGADMIN_SETUP_EMAIL="admin@domain.com"
     export PGADMIN_SETUP_PASSWORD="password"
