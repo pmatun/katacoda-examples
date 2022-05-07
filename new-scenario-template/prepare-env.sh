@@ -28,7 +28,7 @@ sudo sh -c 'echo "deb https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/$(lsb_
 #
 
 # Install for both desktop and web modes:
-sudo apt install pgadmin4 </dev/null
+sudo apt install pgadmin4 --yes </dev/null
 
 # Install for desktop mode only:
 #sudo apt install pgadmin4-desktop
