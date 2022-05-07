@@ -12,7 +12,7 @@ if [[ ! -d "$PGADMIN_SETUP_EMAIL" ]]; then
 fi
 
 sudo apt update
-#sudo apt install ca-certificates
+sudo apt install -y ca-certificates
 
 #
 # Setup the repository
