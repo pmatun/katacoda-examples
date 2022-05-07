@@ -37,6 +37,6 @@ sudo apt install pgadmin4 --yes </dev/null
 #sudo apt install pgadmin4-web 
 
 # Configure the webserver, if you installed pgadmin4-web:
-sudo /usr/pgadmin4/bin/setup-web.sh --yes
+PGADMIN_SETUP_PASSWORD="admin@domain.com" PGADMIN_SETUP_EMAIL="password"  /usr/pgadmin4/bin/setup-web.sh --yes
 
 #launch.sh
