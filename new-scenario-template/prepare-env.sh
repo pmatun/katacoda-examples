@@ -6,8 +6,8 @@ echo 'please wait while we prep the environment (should take about 10 seconds)'
 if [[ ! -d "$PGADMIN_SETUP_EMAIL" ]]; then 
     export PGADMIN_SETUP_EMAIL="admin@domain.com"
     export PGADMIN_SETUP_PASSWORD="password"
-    echo 'export PGADMIN_SETUP_EMAIL="${pg_admin_email}"' >> ~/.bashrc
-    echo 'export PGADMIN_SETUP_PASSWORD="${pg_admin_pwd}"' >> ~/.bashrc
+    echo 'export PGADMIN_SETUP_EMAIL="admin@domain.com"' >> ~/.bashrc
+    echo 'export PGADMIN_SETUP_PASSWORD="password"' >> ~/.bashrc
 fi
 
 sudo apt update
