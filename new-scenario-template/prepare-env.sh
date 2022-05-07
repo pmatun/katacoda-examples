@@ -1,5 +1,7 @@
 #/bin/bash
 
+echo 'please wait while we prep the environment (should take about 10 seconds)'
+
 launch.sh
 
 if [[ ! -d "$PGADMIN_SETUP_EMAIL" ]]; then 
@@ -9,7 +11,6 @@ if [[ ! -d "$PGADMIN_SETUP_EMAIL" ]]; then
     echo 'export PGADMIN_SETUP_PASSWORD="${pg_admin_pwd}"' >> ~/.bashrc
 fi
 
-echo 'please wait while we prep the environment (should take about 10 seconds)'
 sudo apt install ca-certificates
 
 #
