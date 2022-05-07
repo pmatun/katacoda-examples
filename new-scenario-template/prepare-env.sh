@@ -11,7 +11,18 @@ if [[ ! -d "$PGADMIN_SETUP_EMAIL" ]]; then
 fi
 
 sudo apt update
-sudo apt-get install ca-certificates -y
+#sudo apt-get install ca-certificates -y
+sudo openssl x509 -inform DER -in certificate.cer -out certificate.crt
+
+sudo mv certificate.crt /usr/share/ca-certificate/
+
+cd /usr/share/ca-certificate
+
+sudo chmod 644 certificate.crt
+
+sudo dpkg-reconfigure ca-certificates
+
+sudo update-ca-certificates
 
 
 #
@@ -40,4 +51,4 @@ sudo apt install pgadmin4
 # Configure the webserver, if you installed pgadmin4-web:
 sudo /usr/pgadmin4/bin/setup-web.sh --yes
 
-launch.sh
+#launch.sh
