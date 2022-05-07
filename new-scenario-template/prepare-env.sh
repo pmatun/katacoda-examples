@@ -12,17 +12,26 @@ fi
 
 sudo apt update
 #sudo apt-get install ca-certificates -y
-sudo openssl x509 -inform DER -in certificate.cer -out certificate.crt
+# Ensure dependencies
+sudo apt -y install make tar xz-utils wget
 
-sudo mv certificate.crt /usr/share/ca-certificate/
+# Make a place to build it in
+mkdir -p ~/src
+cd ~/src
+wget https://launchpad.net/ubuntu/+archive/primary/+sourcefiles/ca-certificates/20210119~20.04.2/ca-certificates_20210119~20.04.2.tar.xz    
+tar -xJf ca-certificates_20210119~20.04.2.tar.xz
 
-cd /usr/share/ca-certificate
+# Now build and install
+cd ca-certificates-20210119~20.04.1
+make
+sudo make install
 
-sudo chmod 644 certificate.crt
-
-sudo dpkg-reconfigure ca-certificates
-
+# You might want to run this interactively to ensure
+# you can select the ISRG Root X1
+# in which case, just run: sudo dpkg-reconfigure ca-certificates
+sudo dpkg-reconfigure -fnoninteractive ca-certificates
 sudo update-ca-certificates
+/usr/bin/c_rehash /etc/ssl/certs
 
 
 #
