@@ -2,7 +2,7 @@
 
 echo 'please wait while we prep the environment'
 
-launch.sh
+#launch.sh
 
 export PGADMIN_SETUP_EMAIL="admin@domain.com"
 export PGADMIN_SETUP_PASSWORD="password"
