@@ -4,12 +4,10 @@ echo 'please wait while we prep the environment'
 
 launch.sh
 
-if [[ ! -d "$PGADMIN_SETUP_EMAIL" ]]; then 
-    export PGADMIN_SETUP_EMAIL="admin@domain.com"
-    export PGADMIN_SETUP_PASSWORD="password"
-    echo 'export PGADMIN_SETUP_EMAIL="admin@domain.com"' >> ~/.bashrc
-    echo 'export PGADMIN_SETUP_PASSWORD="password"' >> ~/.bashrc
-fi
+export PGADMIN_SETUP_EMAIL="admin@domain.com"
+export PGADMIN_SETUP_PASSWORD="password"
+echo 'export PGADMIN_SETUP_EMAIL="admin@domain.com"' >> ~/.bashrc
+echo 'export PGADMIN_SETUP_PASSWORD="password"' >> ~/.bashrc
 
 sudo apt update
 sudo apt-get install ca-certificates -y </dev/null
