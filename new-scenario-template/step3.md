@@ -1,8 +1,28 @@
-# Heading for Step 3
+# Create geodata namespace and resources
 
-This is some text.
+Create geodata namespace.
 
-Here's a single line of runnable code:
+`kubectl create -f geodata/namespace.yml`{{execute}}
 
-`printf 'Cello, world!\n\n'`{{execute}}
+First we need to create config and secret maps that hold rest-api configuration parameteres.
+
+```bash
+kubectl apply -f geodata/geodata-config.yml
+kubectl apply -f geodata/geodata-secret.yml
+```{{execute}}
+
+Now it is time to create geodata-rest deployment and service:
+
+```bash
+kubectl apply -f geodata/rest/geodata-rest-deployment.yml
+kubectl apply -f geodata/rest/geodata-rest-service.yml
+```{{execute}}
+
+Deploy geodata-web application
+
+```bash
+kubectl apply -f geodata/web/geodata-web-deployment.yml
+kubectl apply -f geodata/web/geodata-web-service.yml
+```{{execute}}
+
 
