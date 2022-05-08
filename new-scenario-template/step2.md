@@ -55,14 +55,6 @@ We can expose this service, to the outside world by using port forwarding:
 kubectl port-forward service/postgres-service 5435:5432
 ```{{execute}}
 
-**Now startup pgadmin in new terminal and connect to database on localhost:5435**
+**Now open pgadmin in browser https://<host>/pgadmin4/ and connect to database on localhost:5435**
   
-```bash 
-docker pull dpage/pgadmin4
-docker run -p 80:80 \
-    -e 'PGADMIN_DEFAULT_EMAIL=admin@domain.com' \
-    -e 'PGADMIN_DEFAULT_PASSWORD=admin' \
-    -d dpage/pgadmin4
-```{{execute}}
-
-Once all is working as expected kill port-forwarding by pressing ^C inside the terminal.
+When you are done, kill port-forwarding by pressing ^C inside the terminal.
