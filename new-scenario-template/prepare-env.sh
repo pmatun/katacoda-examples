@@ -2,6 +2,14 @@
 
 echo 'please wait while we prep the environment'
 
+
+if [[ ! -d "$PGADMIN_SETUP_EMAIL" ]]; then 
+    export PGADMIN_SETUP_EMAIL="admin@domain.com"
+    export PGADMIN_SETUP_PASSWORD="password"
+    echo 'export PGADMIN_SETUP_EMAIL="admin@domain.com"' >> ~/.bashrc
+    echo 'export PGADMIN_SETUP_PASSWORD="password"' >> ~/.bashrc
+fi
+
 sudo apt update
 sudo apt-get install ca-certificates -y </dev/null
 
@@ -29,6 +37,7 @@ sudo apt install pgadmin4 --yes </dev/null
 #sudo apt install pgadmin4-web 
 
 # Configure the webserver, if you installed pgadmin4-web:
-PGADMIN_SETUP_PASSWORD="admin@domain.com" PGADMIN_SETUP_EMAIL="password" /usr/pgadmin4/bin/setup-web.sh --yes
+#PGADMIN_SETUP_PASSWORD="admin@domain.com" PGADMIN_SETUP_EMAIL="password" /usr/pgadmin4/bin/setup-web.sh --yes
+. /usr/pgadmin4/bin/setup-web.sh --yes
 
 #launch.sh
