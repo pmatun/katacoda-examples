@@ -1,4 +1,4 @@
-apiVersion: networking.k8s.io/v1
+apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   name: geodata-ingress
@@ -11,11 +11,6 @@ spec:
       http:
         paths:
           - path: /
-            pathType: Prefix
             backend:
-              service:
-                name: geodata-web-service
-                port:
-                  number: 8085
-                  # use the line bellow for geodata-app
-                  #number: 8080
+              serviceName: geodata-web-service
+              servicePort: 8085
