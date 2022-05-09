@@ -39,6 +39,6 @@
     "uilayout": "editor-terminal"
   },
   "backend": {
-    "imageid": "minikube"
+    "imageid": "ubuntu:2004"
   }
 }
