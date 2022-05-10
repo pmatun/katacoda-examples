@@ -28,8 +28,7 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
-      "code": "prepare-env.sh"
+      "text": "intro.md"
     },
     "finish": {
       "text": "finish.md"
