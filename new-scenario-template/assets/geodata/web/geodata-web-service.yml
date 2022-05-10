@@ -10,4 +10,4 @@ spec:
     app: geodata-web
   ports:
     - name: http
-      port: 80
+      port: 8085
