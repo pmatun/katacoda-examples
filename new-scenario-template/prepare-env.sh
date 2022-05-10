@@ -40,12 +40,5 @@ sudo apt install pgadmin4-web --yes </dev/null
 #PGADMIN_SETUP_PASSWORD="admin@domain.com" PGADMIN_SETUP_EMAIL="password" /usr/pgadmin4/bin/setup-web.sh --yes
 #. /usr/pgadmin4/bin/setup-web.sh --yes
 
-sleep 2
 
-sudo sed -i 's/Listen 80/Listen 8081/' /etc/apache2/ports.conf
 
-sudo sed -i 's/*:80/*:8081/' /etc/apache2/sites-available/000-default.conf
-
-sleep 2
-
-sudo systemctl restart apache2
