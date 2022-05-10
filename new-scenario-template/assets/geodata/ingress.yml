@@ -7,10 +7,9 @@ metadata:
     app: ingress
 spec:
   rules:
-    - host: geodata.local-minikube.io
-      http:
+    - http:
         paths:
           - path: /
             backend:
               serviceName: geodata-web-service
-              servicePort: 8085
+              servicePort: 80
