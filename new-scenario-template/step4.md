@@ -6,7 +6,12 @@ Expose application with NodePort
 kubectl expose deployment geodata-web-deployment --type=NodePort -n geodata
 ```{{execute}}
 
+```bash
+kubectl get svc -n geodata
+```{{execute}}
+
 Open in browser http://<node_ip>:<node_port>/
+At the top of the terminal panel, click the plus sign, and then click Select port to view on Host 1. Enter the NodePort and then click Display Port.
 
 Fetch node ip with
 
