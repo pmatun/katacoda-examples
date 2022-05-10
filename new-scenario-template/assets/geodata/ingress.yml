@@ -12,4 +12,4 @@ spec:
           - path: /
             backend:
               serviceName: geodata-web-service
-              servicePort: 80
+              servicePort: 8085
