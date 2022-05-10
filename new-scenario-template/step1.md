@@ -26,7 +26,7 @@ minikube addons enable dashboard
 Make the Kubernetes Dashboard available by deploying the following YAML definition. This should only be used on Katacoda.
 
 ```bash
-kubectl apply -f kubernetes-dashboard.yaml
+kubectl apply -f /katacoda/kubernetes-dashboard.yaml
 ```{{execute}}
 
 The Kubernetes dashboard allows you to view your applications in a UI. In this deployment, the dashboard has been made available on port 30000 but may take a while to start.
