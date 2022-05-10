@@ -36,6 +36,8 @@
     }
   },
   "environment": {
+    "showdashboard": true,
+    "dashboard": "Dashboard",
     "uilayout": "editor-terminal"
   },
   "backend": {
