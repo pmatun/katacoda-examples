@@ -30,4 +30,9 @@ Create ingress and expose geodata app
 kubectl apply -f geodata/ingress.yml
 ```{{execute}}
 
-Executing the command above will create, in geodata namespace, an ingress service that exposes geodata-web application on url: geodata.local-minikube.io on port 80.
+
+Check ingress
+```bash
+kubectl get ing -n geodata
+```{{execute}}
+
