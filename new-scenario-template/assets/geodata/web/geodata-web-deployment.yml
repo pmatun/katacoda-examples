@@ -33,7 +33,7 @@ spec:
             value: "http://geodata-rest-service:8081/auth"
           ports:
             - name: http
-              containerPort: 80
+              containerPort: 8085
               protocol: TCP
           resources:
             requests:
