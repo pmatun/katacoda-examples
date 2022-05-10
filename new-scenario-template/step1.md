@@ -1,13 +1,6 @@
 # Step 1 - Start Minikube
 
-Install minikube in the environment. 
-
-```bash
-curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
-sudo install minikube-linux-amd64 /usr/local/bin/minikube
-```{{execute}}
-
-Check that it is properly installed, by running the minikube version command:
+Minikube has been installed and configured in the environment. Check that it is properly installed, by running the minikube version command:
 
 `minikube version`{{execute}}
 
