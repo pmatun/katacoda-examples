@@ -38,8 +38,7 @@
   "environment": {
     "showdashboard": true,
     "dashboards": [{"name": "Dashboard", "port": 30000}],
-    "uilayout": "terminal",
-    "showide": true
+    "uilayout": "vscode-terminal-split"
   },
   "backend": {
     "imageid": "minikube"
