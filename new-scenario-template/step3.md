@@ -15,7 +15,7 @@ kubectl get secret
 Now persistent volume:
 
 ```bash
-kubectl create -f postgres/postgres-sv.yml
+kubectl create -f postgres/postgres-pv.yml
 kubectl create -f postgres/postgres-pvc.yml
 ```{{execute}}
 
