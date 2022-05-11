@@ -1,31 +1,34 @@
-# New Scenario Template (Your Title Here)
+# Agency04 K8s workshop
 
-This is a mostly empty template. To create your own first scenario, duplicate this in your own repo, then modify it as needed.
+## Workshop Agenda
 
-## Description
+- Introduction (tooling checklist, setup, …) 
+- Basic concepts
+- Main kubernetes components
+- Setup local kubernetes cluster 
+- Interacting with the cluster (kubectl, dashboard)
+- Demo: deploy Spring boot app to minikube
 
-2-3 sentences on what the scenario covers, illustrates, and teaches. What technology is used, and what task will the learner have accomplished by the end?
 
-Importantly, why does this matter? What can this technology, tool, or approach help you accomplish? Briefly communicate the real-world application(s) of this skill.
+## Minikube 
+is a tool that makes it easy to run Kubernetes locally. Minikube runs a single-node Kubernetes cluster inside a VM on your laptop for users looking to try out Kubernetes or develop with it day-to-day.
 
-## Learning Objective
+More details can be found at 
+https://github.com/kubernetes/minikube
+https://minikube.sigs.k8s.io/docs/start/
 
-- 3-4 bullets
-- of what you
-- will learn
+## Kubernetes 
+is an open-source container orchestration system for automating software deployment, scaling, and management. Originally designed by Google
 
-## Prerequisite Skills
+## Main Kubernetes components
+- Node
+- Pod
+- Services
+- ConfigMap, Secret
+- Volume
+- Deployment, StatefulSet
 
-Define the target audience here, and list any prerequisite skills. For example:
 
-This is for software developers with prior experience using Jenkins to deploy web applications.
 
-## Table of Contents
-
-If the scenario is part of a set of related scenarios, the table of contents will appear here as a bulleted list of all the scenario titles, with links to each other.
-
-- Scenario A
-- Scenario B
-- Scenario C
 
 
