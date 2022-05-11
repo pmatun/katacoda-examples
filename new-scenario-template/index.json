@@ -41,7 +41,7 @@
   },
   "environment": {
     "showdashboard": true,
-    "dashboards": [{"name": "Dashboard", "port": 30000}, {"name": "pgAdmin", "port": 8081}],
+    "dashboards": [{"name": "Dashboard", "port": 30000}, {"name": "pgAdmin", "port": 8081, "path": "pgAdmin4"}],
     "uilayout": "editor-terminal"
   },
   "backend": {
