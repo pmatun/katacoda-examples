@@ -14,11 +14,17 @@
 is a tool that makes it easy to run Kubernetes locally. Minikube runs a single-node Kubernetes cluster inside a VM on your laptop for users looking to try out Kubernetes or develop with it day-to-day.
 
 More details can be found at 
+
 https://github.com/kubernetes/minikube
+
 https://minikube.sigs.k8s.io/docs/start/
 
 ## Kubernetes 
-is an open-source container orchestration system for automating software deployment, scaling, and management. Originally designed by Google
+is an open-source container orchestration system for automating software deployment, scaling, and management. 
+Originally designed by Google.
+
+Documentation
+https://kubernetes.io/docs/home/
 
 ## Main Kubernetes components
 - Node
