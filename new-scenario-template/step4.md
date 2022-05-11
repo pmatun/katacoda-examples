@@ -40,6 +40,8 @@ kubectl port-forward service/postgres-service 5435:5432
 Login credentials are:
   User: admin@domain.com
   Password: password
+  
 Connect to databse on localhost:5435
+  Check credentials from ConfigMap and Secret
   
 When you are done, kill port-forwarding by pressing ^C inside the terminal.
