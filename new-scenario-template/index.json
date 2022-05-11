@@ -45,7 +45,8 @@
   },
   "environment": {
     "showdashboard": true,
-    "dashboards": [{"name": "Dashboard", "port": 30000}, {"name": "pgAdmin", "href": "https://[[HOST_SUBDOMAIN]]-8081-[[KATACODA_HOST]].environments.katacoda.com/pgadmin4"}]
+    "dashboards": [{"name": "Dashboard", "port": 30000}, {"name": "pgAdmin", "href": "https://[[HOST_SUBDOMAIN]]-8081-[[KATACODA_HOST]].environments.katacoda.com/pgadmin4"}],
+    "uilayout": "terminal"
   },
   "backend": {
     "imageid": "minikube"
