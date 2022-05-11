@@ -35,6 +35,9 @@ We can expose this service, to the outside world by using port forwarding:
 kubectl port-forward service/postgres-service 5435:5432
 ```{{execute}}
 
-**Now open pgadmin in pgAdmin tab
+### Now open pgadmin in pgAdmin tab
+Login credentials are:
+  User: admin@domain.com
+  Password: password
   
 When you are done, kill port-forwarding by pressing ^C inside the terminal.
