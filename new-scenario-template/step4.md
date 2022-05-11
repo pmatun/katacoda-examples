@@ -36,8 +36,10 @@ kubectl port-forward service/postgres-service 5435:5432
 ```{{execute}}
 
 ### Now open pgadmin in pgAdmin tab
+  
 Login credentials are:
   User: admin@domain.com
   Password: password
+Connect to databse on localhost:5435
   
 When you are done, kill port-forwarding by pressing ^C inside the terminal.
