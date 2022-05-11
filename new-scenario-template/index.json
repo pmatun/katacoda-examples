@@ -42,7 +42,7 @@
   "environment": {
     "showdashboard": true,
     "dashboards": [{"name": "Dashboard", "port": 30000}],
-    "uilayout": "terminal"
+    "uilayout": "editor-terminal"
   },
   "backend": {
     "imageid": "minikube"
