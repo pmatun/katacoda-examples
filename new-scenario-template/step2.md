@@ -13,10 +13,10 @@ kubectl apply -f katacoda/kubernetes-dashboard.yaml
 
 The Kubernetes dashboard allows you to view your applications in a UI. In this deployment, the dashboard has been made available on port 30000 but may take a while to start.
 
-To see the progress of the Dashboard starting, check the Pods within the kube-system namespace using 
+To see the progress of the Dashboard starting, watch the Pods within the kube-system namespace using 
 
 ```bash
-kubectl get pods -n kubernetes-dashboard
+kubectl get pods -n kubernetes-dashboard -w
 ```{{execute}}
 
 Once running, go to Dashboard tab
