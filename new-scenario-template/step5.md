@@ -25,4 +25,10 @@ kubectl apply -f geodata/web/geodata-web-deployment.yml
 kubectl apply -f geodata/web/geodata-web-service.yml
 ```{{execute}}
 
+Check if everything is deployed successfully in geodata namespace
+
+```bash
+kubectl get all -n geodata
+```{{execute}}
+
 
