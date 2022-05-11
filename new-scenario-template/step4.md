@@ -4,6 +4,12 @@
 kubectl apply -f postgres/postgres-deployment.yml
 ```{{execute}}
 
+Check if pod is ready
+
+```bash
+kubectl get pods
+```{{execute}}
+
 We need to expose database to others as service, so execute the following command:
 
 ```bash
